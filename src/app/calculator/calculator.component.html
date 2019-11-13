@@ -1,0 +1,17 @@
+<form name="calculator-form" (submit)="sum()">
+  <p>
+    A:
+    <input type="text" id="a-parameter" name="a-parameter" [(ngModel)]="sumModel.a">
+  </p>
+  <p>
+    B: <input type="text" id="b-parameter" name="b-parameter" [(ngModel)]="sumModel.b">
+  </p>
+  <input type="submit" value="sum">
+</form>
+<p>
+  Result: {{sumResult.result}}
+</p>
+<p>
+  Message: {{sumResult.message }}
+</p>
+
